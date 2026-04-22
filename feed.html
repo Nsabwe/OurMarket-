@@ -238,7 +238,7 @@ async function loadProducts() {
   const search = document.getElementById("searchInput").value;
 
   // ✅ FIX: use backticks + encode values
-  let url ='https://feedserver-3;.onrender.com/products?category=${encodeURIComponent(currentCategory)}';
+  let url =`https://feedserver-3;.onrender.com/products?category=${encodeURIComponent(currentCategory)}`;
 
   if (search) {
     url += `&search=${encodeURIComponent(search)}`;
